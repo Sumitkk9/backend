@@ -21,15 +21,13 @@ app.use(cookieParser())
 //     res.send('Hello, this is a GET request!');
 // });
 
-export const homepage = (req,res)=>{
-    res.send('Hello World');
-}
+
 
 import userRoute from './model/routes/user.routes.js'
 import subscribeRoute from './model/routes/subscribe.route.js'
 import uploadvideoRoute from  './model/routes/video.route.js'
 import chatRoute from  './model/routes/chat.route.js'
-app.use("/",homepage)
+
 app.use("/api/v1/users",userRoute)
 app.use("/api/v1/channel",subscribeRoute)
 app.use("/api/v1/video",uploadvideoRoute)

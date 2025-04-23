@@ -7,6 +7,9 @@ const port = 3000
 
 dotenv.config({path:'./env'}) 
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
 
 connectDb()
 .then(()=>{
