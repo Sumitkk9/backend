@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "builds": [
+      { "src": "api/allChatAdmin.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+      { "src": "/api/allChatAdmin", "dest": "api/allChatAdmin.js" }
+    ]
+  }
