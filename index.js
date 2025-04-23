@@ -20,3 +20,5 @@ connectDb()
 .catch((err)=>{
   console.log("Mongo db Connection Failed !!!", err)
 }) 
+
+export default app;
